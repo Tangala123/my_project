@@ -12,7 +12,7 @@ RUN rm -rf apache-tomcat-11.0.7.tar.gz
 
 RUN mv apache-tomcat-11.0.7 tomcat11
 
-COPY target/my_project.war /opt/tomcat11/webapp
+COPY target/my_project.war /opt/tomcat11/webapps
 
 EXPOSE 8080
 
