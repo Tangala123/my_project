@@ -28,3 +28,12 @@ sudo curl --location "https://github.com/eksctl-io/eksctl/releases/latest/downlo
 sudo tar -xzf eksctl.tar.gz
 sudo mv eksctl /usr/local/bin
 eksctl version
+eksctl create cluster \
+  --name my-eks-cluster \
+  --region eu-west-1 \
+  --nodegroup-name my-node-group \
+  --node-type t3.medium \
+  --nodes 2 \
+  --nodes-min 1 \
+  --nodes-max 3 \
+  --managed
