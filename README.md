@@ -1,4 +1,4 @@
-~# Install Jenkins
+```# Install Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum install java-17 -y
@@ -38,3 +38,4 @@ eksctl create cluster \
   --nodes-min 1 \
   --nodes-max 3 \
   --managed
+```
